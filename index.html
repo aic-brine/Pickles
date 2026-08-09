@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BRINE-IAC PICKLES | Big Brain. Bigger Flavor.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			:root {
+				--pickle-deep: #2F4F2F;     /* Rich Artisan Dill/Forest Green */
+				--pickle-mid: #436143;      /* Muted Green for panels */
+				--pickle-sage: #A3B899;     /* Soft Muted Sage for text accents */
+				--pickle-pop: #66BB6A;      /* Bright Green for text links and borders */
+				--bg-tint: #EDF2EC;         /* Light, crisp brine-tinted content background */
+				--footer-dark: #1E311E;     /* Deepest Brine for footer contrast */
+			}
+
+			/* Fix for Overlapping Headers */
+			#header {
+				background-color: #243d24 !important;
+				border-bottom: 3px solid var(--pickle-pop);
+				padding: 1.5em 0;
+				height: auto !important;
+				position: relative !important;
+			}
+			#header h1 {
+				position: relative !important;
+				top: auto !important;
+				left: auto !important;
+				margin-bottom: 1em !important;
+				display: block !important;
+				text-align: center;
+			}
+			#header h1 a {
+				color: var(--pickle-pop) !important;
+				font-weight: 700;
+				font-size: 1.5em !important;
+			}
+			#nav {
+				position: relative !important;
+				top: auto !important;
+				right: auto !important;
+				display: block !important;
+				text-align: center;
+				margin: 0 auto !important;
+			}
+			#nav ul li.current a {
+				background: var(--pickle-mid) !important;
+				color: #FFFFFF !important;
+				font-weight: bold;
+			}
+
+			/* Banner Overlap Fixes */
+			#banner {
+				background: linear-gradient(135deg, #1E351E, #3A5F3A) !important;
+				color: #FFFFFF;
+				padding: 6em 0 !important;
+				text-align: center;
+			}
+			#banner h2, #banner p {
+				position: relative !important;
+				display: block !important;
+				margin: 0 auto 0.5em auto !important;
+				line-height: 1.4 !important;
+			}
+			#banner h2 {
+				color: #FFFFFF !important;
+				font-size: 2.5em !important;
+			}
+			#banner p {
+				color: var(--pickle-sage) !important;
+				font-size: 1.25em !important;
+			}
+
+			/* Lower Section Content Theme Upgrades */
+			.wrapper.style1 {
+				background-color: var(--bg-tint) !important;
+			}
+			.wrapper.style2 {
+				background-color: var(--pickle-mid) !important;
+				color: #FFFFFF !important;
+				border-top: 2px solid var(--pickle-deep);
+				border-bottom: 2px solid var(--pickle-deep);
+			}
+			.wrapper.style2 h2, .wrapper.style2 p {
+				color: #FFFFFF !important;
+			}
+
+			/* Card Highlights and Text */
+			.box.highlight {
+				background: #FFFFFF !important;
+				border: 1px solid var(--pickle-sage);
+				border-radius: 6px;
+				padding: 30px 20px !important;
+			}
+			.box.highlight i.major {
+				color: var(--pickle-deep) !important;
+				background-color: #FFFFFF !important;
+				border: 2px solid var(--pickle-pop) !important;
+			}
+			.box.highlight h3 {
+				color: var(--pickle-deep) !important;
+			}
+
+			/* Flavor Post Card Customization */
+			.box.post {
+				background: #FFFFFF !important;
+				border: 1px solid var(--pickle-sage);
+				border-radius: 6px;
+				padding: 20px !important;
+			}
+			.box.post h3 {
+				color: var(--pickle-deep) !important;
+			}
+
+			/* Call to Action Bar */
+			#cta {
+				background: linear-gradient(to right, var(--pickle-deep), var(--pickle-mid)) !important;
+				border-top: 3px solid var(--pickle-pop);
+				border-bottom: 3px solid var(--pickle-pop);
+			}
+			#cta h2 {
+				color: #FFFFFF !important;
+			}
+			#cta p {
+				color: var(--pickle-sage) !important;
+			}
+
+			/* Footer Brining */
+			#footer {
+				background-color: var(--footer-dark) !important;
+				color: var(--pickle-sage) !important;
+				border-top: 1px solid var(--pickle-deep);
+			}
+			#footer h3 {
+				color: #FFFFFF !important;
+			}
+			#footer input[type="text"], #footer input[type="email"], #footer textarea {
+				background: rgba(255, 255, 255, 0.08) !important;
+				border: 1px solid var(--pickle-deep) !important;
+				color: #FFFFFF !important;
+			}
+			#footer input[type="text"]::placeholder, #footer input[type="email"]::placeholder, #footer textarea::placeholder {
+				color: var(--pickle-sage) !important;
+			}
+
+			/* General Button Updates */
+			.button {
+				background-color: var(--pickle-deep) !important;
+				color: #FFFFFF !important;
+				border-radius: 4px;
+				box-shadow: none !important;
+				display: inline-block !important;
+				margin-top: 1em !important;
+				border: 1px solid var(--pickle-pop) !important;
+			}
+			.button:hover {
+				background-color: var(--pickle-pop) !important;
+				color: var(--pickle-deep) !important;
+			}
+			.button.alt {
+				background-color: transparent !important;
+				color: var(--pickle-pop) !important;
+				border: 1px solid var(--pickle-pop) !important;
+			}
+			.button.alt:hover {
+				background-color: var(--pickle-pop) !important;
+				color: var(--pickle-deep) !important;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header">
+				<h1><a href="index.html" id="logo">BRINE-IAC PICKLES 🥒🧪</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">The Lab</a></li>
+						<li><a href="#flavors">Our Experiments</a></li>
+						<li><a href="merch.html">Merch Catalog</a></li>
+						<li><a href="login.html">Purchase / Login</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Banner -->
+			<section id="banner">
+				<header style="all: unset; display: block;">
+					<h2>BRINE-IAC PICKLES</h2>
+					<p>Big Brain. Bigger Flavor.</p>
+					<a href="#flavors" class="button">Examine the Evidence</a>
+				</header>
+			</section>
+
+			<!-- Highlights / The Science -->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="row gtr-200">
+						<style>
+							/* Target mobile layout shifts specifically for the science cards */
+							@media screen and (max-width: 736px) {
+								.box.highlight {
+									padding: 30px 20px 20px 20px !important;
+									text-align: center !important;
+								}
+								.box.highlight i.major {
+									position: relative !important;
+									left: auto !important;
+									top: auto !important;
+									margin: 0 auto 15px auto !important;
+									display: inline-flex !important;
+									align-items: center;
+									justify-content: center;
+								}
+								.box.highlight h3 {
+									margin-left: 0 !important;
+									padding-left: 0 !important;
+								}
+								.box.highlight p {
+									margin-left: 0 !important;
+									padding-left: 0 !important;
+								}
+							}
+						</style>
+						
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid major fa-flask"></i>
+								<h3>The Crunchology</h3>
+								<p>Peer-reviewed enthusiasm meets tight, experimental parameters to secure the loudest snap in pickle history.</p>
+							</div>
+						</section>
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid major fa-brain"></i>
+								<h3>Genius Profiles</h3>
+								<p>Engineered flavor compounds and proprietary brines optimized directly by our Chief Crunch Officer.</p>
+							</div>
+						</section>
+						<section class="col-4 col-12-narrower">
+							<div class="box highlight">
+								<i class="icon solid major fa-dna"></i>
+								<h3>100% Small Batch</h3>
+								<p>No mass production shortcuts here. Every single jar is a successful iteration of a highly calculated baseline formula.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Gigantic Heading / Brand Statement -->
+			<section class="wrapper style2">
+				<div class="container">
+					<header class="major">
+						<h2>A Real Flavor Experiment 🧪</h2>
+						<p>Welcome to the laboratory where maximum crunch is mathematically proven.</p>
+					</header>
+				</div>
+			</section>
+
+			<!-- Posts / Flavor Showcase -->
+			<section id="flavors" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="images/pic01.jpg" alt="Experimental Flavor 1" /></a>
+								<div class="inner">
+									<h3>Formula Alpha: Classic Dill</h3>
+									<p>The control group. Crisp, garlic-heavy, and mathematically refined for optimal burger coverage.</p>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="images/pic02.jpg" alt="Experimental Flavor 2" /></a>
+								<div class="inner">
+									<h3>Formula Beta: Spicy Lab Tech</h3>
+									<p>Infused with hot pepper visual components. High heat index that doesn't sacrifice structural crunch.</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA / E-Commerce Sign Up -->
+			<section id="cta" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Join the Testing Pool</h2>
+						<div><p> </p>
+						</div>
+						<p>Get notified immediately when our next experimental flavor lab report drops.</p>
+						<a href="#" class="button">Initialize Account</a>
+					</header>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<h3>Submit Field Notes</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Researcher Name" />
+									</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email Address" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Log your taste-test feedback here..." rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Transmit Data" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+				<ul class="icons">
+					<li><a href="https://instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				</ul>
+
+				<!-- Copyright -->
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; BRINE-IAC PICKLES. All rights reserved.</li>
+						<li>Design Base: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script> 
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

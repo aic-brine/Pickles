@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BRINE-IAC PICKLES | Secure Portal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			:root { --pickle-deep: #2F4F2F; --pickle-mid: #556B2F; --pickle-pop: #66BB6A; --pickle-sage: #A3B899; }
+			#header { background-color: #243d24 !important; border-bottom: 3px solid var(--pickle-pop); padding: 1.5em 0; text-align: center; }
+			#header h1 a { color: var(--pickle-pop) !important; font-weight:700; }
+			#nav ul li a { color: #E2E8F0 !important; }
+			.login-box { max-width: 450px; margin: 4em auto; background: #FFFFFF; padding: 40px; border-radius: 8px; border: 1px solid var(--pickle-sage); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+			.form-group { margin-bottom: 20px; }
+			.form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--pickle-deep); text-align: left; }
+			.form-group input { width: 100%; padding: 12px; border: 1px solid var(--pickle-sage); border-radius: 4px; background: #FAFAFA; }
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<div id="header">
+				<h1><a href="index.html" id="logo">BRINE-IAC PICKLES 🥒🧪</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">The Lab</a></li>
+						<li><a href="index.html#flavors">Our Experiments</a></li>
+						<li><a href="merch.html">Merch Catalog</a></li>
+						<li class="current"><a href="login.html">Purchase / Login</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="login-box">
+						<h3 style="text-align: center; margin-bottom: 1em; color: var(--pickle-deep);">Portal Authentication</h3>
+						<form onsubmit="return false;">
+							<div class="form-group">
+								<label>Researcher ID / Email</label>
+								<input type="text" value="crunchologist_42@brineiac.com" readonly />
+							</div>
+							<div class="form-group">
+								<label>Security Key passcode</label>
+								<input type="password" value="••••••••••••••••" readonly />
+							</div>
+							<div style="text-align: center; margin-top: 2em;">
+								<input type="submit" class="button" value="Decrypt Terminal (Coming Soon)" style="width: 100%;" disabled />
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
