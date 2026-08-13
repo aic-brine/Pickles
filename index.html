@@ -58,21 +58,22 @@
         background: var(--dill);
     }
 
-    .links {
-        margin-top: 2em;
-    }
-
-    .links a {
-        display: inline-block;
-        margin: 1em;
-        padding: 0.7em 1.4em;
-        border: 2px solid var(--lime);
-        border-radius: 6px;
-        color: var(--darkG);
-        text-decoration: none;
-        font-size: 1.3em;
-        background: linear-gradient(135deg, var(--lime), var(--dill));
-    }
+    .links { 
+      margin-top: 2em; 
+    } 
+    
+    .links a { 
+      display: inline-block; 
+      margin: 1em; 
+      padding: 0.7em 1.4em; 
+      border: 2px solid var(--lime); 
+      border-radius: 6px; 
+      color: var(--darkG); 
+      text-decoration: none; 
+      font-size: 1.3em; 
+      background: linear-gradient(135deg, var(--lime), var(--dill)); 
+      transition: background 0.1s ease; /* Makes the push feel responsive */
+    } 
 
     .links a:hover {
         background: var(--darkG);
